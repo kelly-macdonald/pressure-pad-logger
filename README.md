@@ -11,22 +11,17 @@ A pressure pad residing under a mat, used for logging uptime of a machine.
 
 Describe your project
 
-## Step 1: Installation
-Please describe the steps to install this project.
+## Step 1: Create Arduino IoT Cloud Account
 
-For example:
+## Step 2: Assemble circuit and mat
 
-1. Open this file
-2. Edit as you like
-3. Release to the World!
+Assemble the circuit following the diagram pressure_mat_circuit.png found in this repository. Note that WiFi capability will be possible with an Arduino MKR WiFi 1010, although an Arduino UNO is depicted in the diagram.
 
-## Step 2: Assemble the circuit
+## Step 3: Upload code
 
-Assemble the circuit following the diagram layout.png attached to the sketch
+## Step 4: Set up WebHook Applet via IFTTT
 
-## Step 3: Load the code
-
-Upload the code contained in this sketch on to your board
+## Step 5: Process data in Google Sheets
 
 ### Folder structure
 
@@ -39,11 +34,12 @@ Upload the code contained in this sketch on to your board
 ....
 
 ## BOM
-Add the bill of the materials you need for this project.
 
 |===
-| ID | Part name      | Part number | Quantity
-| R1 | 10k Resistor   | 1234-abcd   | 10       
-| L1 | Red LED        | 2345-asdf   | 5        
-| A1 | Arduino Zero   | ABX00066    | 1        
+| Part name                         | Part number     | Quantity
+| 10k Resistor                      | CFR-25JR-52-10K | 6       
+| LED                               | 2460-L513SRD-ND | 2        
+| Force Sens Resistor               | 1027-1033-ND    | 6        
+| Arduino MKR WiFi 1010             | 1050-1162-ND    | 1     
+| Moisture-Resistant Polyester Film | 8567K12         | 1
 |===
