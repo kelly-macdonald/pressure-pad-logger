@@ -1,17 +1,13 @@
 # pressure-pad-logger
 A pressure pad residing under a mat, used for logging uptime of a machine.
 
-:Author: kellymacdonald
+:Author: kelly-macdonald
 
 :Email: kelly.macdonald@formlabs.com
 
 :Date: 6/02/2022 
 
 :Revision: 01 
-
-:License: Public Domain
-
-:Project: pressure-pad-logger
 
 Describe your project
 
