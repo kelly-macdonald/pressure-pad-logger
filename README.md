@@ -34,12 +34,8 @@ Assemble the circuit following the diagram pressure_mat_circuit.png found in thi
 ....
 
 ## BOM
-
-|===
-| Part name                         | Part number     | Quantity
 | 10k Resistor                      | CFR-25JR-52-10K | 6       
 | LED                               | 2460-L513SRD-ND | 2        
 | Force Sens Resistor               | 1027-1033-ND    | 6        
 | Arduino MKR WiFi 1010             | 1050-1162-ND    | 1     
 | Moisture-Resistant Polyester Film | 8567K12         | 1
-|===
