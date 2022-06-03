@@ -12,16 +12,19 @@ A pressure pad residing under a mat, used for logging uptime of a machine.
 Describe your project
 
 ## Step 1: Set Up Arduino IoT Cloud Account
-Follow this [link](https://login.arduino.cc/login?state=hKFo2SBsWGpkdk1wbGtYUVFzUXU4emJMUTFkMFN0MjZUamc1Y6FupWxvZ2luo3RpZNkgekZUSk1rUXBOQ1AtNUd3TzVDdnR0SDFNQ1hRem5aT3WjY2lk2SB1bUJ5Ulk4SXBZTVZrUHF3QVQ5UHZraU4yYWtVTnlJUw&client=umByRY8IpYMVkPqwAT9PvkiN2akUNyIS&protocol=oauth2&authorizeTimeoutInSeconds=5&scope=openid+profile+email&redirect_uri=https%3A%2F%2Fcreate.arduino.cc%2Fiot%2F&skipAutoLogin=true&domain=login.arduino.cc&cacheLocation=memory&response_type=code&response_mode=query&nonce=akhGM2VyNnlrRUg0TlU3fi1xTzlrRGNDY2xQZUNPMGdJQVBRcmwwVFZ2dw%3D%3D&code_challenge=gC6LZ4tZvY8S-EQ9pU9STDL-DSJj1C0tIyfKZYu_sJY&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjEuMTIuMSJ9#/sso/register) to create a free account. Create a new "thing" and configure an Arduino MKR WiFi 1010 via a USB cable. Configure network connection with the desired network. Create two variables called person_on1 and person_on2 within the "thing". 
+Follow this [link](https://login.arduino.cc/login?state=hKFo2SBsWGpkdk1wbGtYUVFzUXU4emJMUTFkMFN0MjZUamc1Y6FupWxvZ2luo3RpZNkgekZUSk1rUXBOQ1AtNUd3TzVDdnR0SDFNQ1hRem5aT3WjY2lk2SB1bUJ5Ulk4SXBZTVZrUHF3QVQ5UHZraU4yYWtVTnlJUw&client=umByRY8IpYMVkPqwAT9PvkiN2akUNyIS&protocol=oauth2&authorizeTimeoutInSeconds=5&scope=openid+profile+email&redirect_uri=https%3A%2F%2Fcreate.arduino.cc%2Fiot%2F&skipAutoLogin=true&domain=login.arduino.cc&cacheLocation=memory&response_type=code&response_mode=query&nonce=akhGM2VyNnlrRUg0TlU3fi1xTzlrRGNDY2xQZUNPMGdJQVBRcmwwVFZ2dw%3D%3D&code_challenge=gC6LZ4tZvY8S-EQ9pU9STDL-DSJj1C0tIyfKZYu_sJY&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjEuMTIuMSJ9#/sso/register) to create a free account. Create a new "thing" and configure an Arduino MKR WiFi 1010 via a USB cable. Configure network connection with the desired network. Create two variables called person_on1 and person_on2 within the "thing". Be sure that they are boolean variables with Read & Write permissions and that they update on change with a threshold of 0.
 
-## Step 2: Upload code
-In the sketch, paste the code from
+## Step 2: Verify code
+In the sketch, paste the code from Pressure_Mat_may10a.ino. The other files will have update automatically based on the variable and network information provided in the main "thing" screen. Verify code.
 
 ## Step 3: Assemble circuit and mat
-
 Assemble the circuit following the diagram pressure_mat_circuit.png found in this repository. Note that WiFi capability will be possible with an Arduino MKR WiFi 1010, although an Arduino UNO is depicted in the diagram.
 
+## Step 4: Upload and test code
+Plug in Arduino and upload code. To test, either monitor the variables' status from the "thing" page, or create a simple dashbord with LED indicators in the "Dashbords" page on Arduino IoT Cloud. If the pressure sensor is too sensitive or not sensitive enough, adjust the threshold variable in the Arduino code and reupload.
+
 ## Step 4: Set up WebHook Applet via IFTTT
+In order to upload the variable updates to a Google sheet, set up an account with [IFTTT](https://ifttt.com/join).
 
 ## Step 5: Process data in Google Sheets
 
