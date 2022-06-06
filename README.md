@@ -20,6 +20,8 @@ In the sketch, paste the code from Pressure_Mat_may10a.ino. The other files will
 ## Step 3: Assemble circuit and mat
 Assemble the circuit following the diagram pressure_mat_circuit.png found in this repository. Note that WiFi capability will be possible with an Arduino MKR WiFi 1010, although an Arduino UNO is depicted in the diagram.
 
+![Circuit Diagram](pressure_mat_circuit.png)
+
 ## Step 4: Upload and test code
 Plug in Arduino and upload code. To test, either monitor the variables' status from the "thing" page, or create a simple dashbord with LED indicators in the "Dashbords" page on Arduino IoT Cloud. If the pressure sensor is too sensitive or not sensitive enough, adjust the threshold variable in the Arduino code and reupload.
 
