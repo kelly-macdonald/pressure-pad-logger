@@ -32,6 +32,7 @@ Create a secondary sheet to process the incoming data. Note that if cells are fi
 ## BOM
 
 | Part name | Part number | Quantity
+
 | 10k Resistor                      | CFR-25JR-52-10K | 6       
 | LED                               | 2460-L513SRD-ND | 2        
 | Force Sens Resistor               | 1027-1033-ND    | 6        
