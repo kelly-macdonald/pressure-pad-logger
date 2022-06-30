@@ -18,7 +18,7 @@ Follow this [link](https://login.arduino.cc/login?state=hKFo2SBsWGpkdk1wbGtYUVFz
 In the sketch, paste the code from Pressure_Mat_may10a.ino. The other files will have update automatically based on the variable and network information provided in the main "thing" screen. Verify code.
 
 ## Step 3: Assemble circuit and mat
-Assemble the circuit following the diagram pressure_mat_circuit.png found in this repository. Note that WiFi capability will be possible with an Arduino MKR WiFi 1010, although an Arduino UNO is depicted in the diagram.
+Assemble the circuit following the diagram pressure_mat_circuit.png found in this repository. Note that WiFi capability will be possible with an Arduino MKR WiFi 1010, although an Arduino UNO is depicted in the diagram. Optionally, 3D print a box to house the Arduino using the STL files included in the repository.
 
 ![Circuit Diagram](pressure_mat_circuit.png)
 
