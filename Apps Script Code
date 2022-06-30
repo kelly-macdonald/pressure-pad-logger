@@ -1,0 +1,11 @@
+function onChange(event) {
+
+var source = SpreadsheetApp.openById('1Ex7I9Iq9TiY2Y9PdefQcun7Yj0x6kQlKej-MBBH-hvs');
+var archive = SpreadsheetApp.openById('1EZAmWCJ4LC_EodI-m1tHx9Z-rQFz0bbH7oJao-wIef8');
+
+var sourceSheet = source.getSheetByName('Raw Data');
+var destSheet = archive.getSheetByName('Raw Data');
+var sourceData = sourceSheet.getRange('A1:T2000').getValues();
+destSheet.getRange(destSheet.getLastRow()+1,1,sourceData.length,sourceData[0].length).setValues(sourceData);
+sourceSheet.getRange('A1:T2000').clear({contentsOnly: true});
+}
